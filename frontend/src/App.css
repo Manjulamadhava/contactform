@@ -1,0 +1,193 @@
+.mainsection{
+  height:100vh;
+  background-color:hsl(148, 38%, 91%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.sectiondiv{
+  display:flex;
+  flex-direction:column;
+  width:500px;
+  background-color:hsl(0, 0%, 100%);
+  border-radius:12px;
+  padding:24px;
+  gap:16px;
+}
+
+.heading{
+  font-size:24px;
+  font-weight:700;
+  color:hsl(187, 24%, 22%);
+}
+
+.rowbased{
+  display:flex;
+  flex-direction:row;
+  gap:16px;
+}
+
+.columnbased{
+  display: flex;
+  flex:1 1 0;
+  min-width:0;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labeling{
+  font-size:16px;
+  font-weight:500;
+  color:hsl(187, 24%, 22%);
+}
+
+.inputstyling,
+.emailstyling,
+.textareastyling {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  cursor:pointer;
+}
+
+.inputstyling,
+.emailstyling,
+.textareastyling :hover{
+  border: 1px solid hsl(186, 15%, 59%);
+}
+
+.inputstyling.error,
+.emailstyling.error,
+.textareastyling.error {
+  border-color: #e57373;
+}
+
+.error-message {
+  color: #e57373;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.but {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.but:hover {
+  background-color: hsl(169, 82%, 22%);
+}
+
+.emaildiv{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.radiostyling{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+.radio-option {
+  flex: 1 1 calc(50% - 8px); 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.inputstylingradio{
+  color:red;
+}
+
+.divstyling{
+  width:230px;
+  height:25px;
+  border:2px dotted red;
+  padding:2px;
+}
+
+.radiorow{
+  display:flex;
+  flex-direction:row;
+}
+
+.checkboxdiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 576px) {
+  .sectiondiv {
+    width: 90%; 
+    padding: 16px;
+  }
+
+  .rowbased {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .radiostyling {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .columnbased{
+  width:100%
+}
+  
+
+  .but {
+    font-size: 14px;
+    height: 44px;
+  }
+
+  .labeling {
+    font-size: 15px;
+  }
+
+  .inputstyling,
+  .emailstyling,
+  .textareastyling {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .checkboxdiv {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  input[type="radio"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+  .radio-option {
+    flex: 1 1 100%; 
+  }
+}
